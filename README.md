@@ -34,7 +34,7 @@ We can do this by running the following two commands.
 sudo apt update
 sudo apt upgrade
 ````
-
+<br/>
 
 **2.** The next step is to install the MySQL server software to your Raspberry Pi.
 Installing MySQL to the Raspberry Pi is a simple process and can be done with the following command.
