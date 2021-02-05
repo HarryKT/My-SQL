@@ -42,7 +42,6 @@ Installing MySQL to the Raspberry Pi is a simple process and can be done with th
 sudo apt install mariadb-server
 ````
 
-
 **3.** With the MySQL server software installed to the Raspberry Pi, we will now need to secure it by setting a password for the **root** user.
 By default, MySQL is installed without any password set up meaning you can access the MySQL server without any authentication.
 Run the following command to begin the MySQL securing process.
@@ -100,8 +99,8 @@ For this example, we will be calling the user `exampleuser` and giving it the pa
 When creating your own, make sure you replace both of these.
 ````
 CREATE USER 'exampleuser'@'localhost' IDENTIFIED BY 'exampleuser';
-````
-
+```` 
+<br>
 
 **4.** With the user created, we can now go ahead and grant all privileges to the user so that it can interact with the database.
 This command will grant all permissions to our `exampleuser` for all tables within our `exampledb` database.
@@ -116,6 +115,7 @@ We can do this by running the following command.
 ````
 FLUSH PRIVILEGES;
 ````
+If you rather not use the command line to administrate your databases then you can always install PHPMyAdmin instead.
 
 ## Installing the PHP MySQL Connector
 **1.** If you intend on using a MySQL database from PHP, you will need to make sure that you have the module installed.
