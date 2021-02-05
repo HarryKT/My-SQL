@@ -118,3 +118,19 @@ sudo apt install php-mysql
 As I mentioned earlier, there are many projects where a database will come in handy. Most modern websites will require a database to be able to function correctly.
 At this point of the tutorial you should now have a MySQL server up and running on your Raspberry Pi. 
 If you have ran into any issues feel free to drop a comment in the comments section below.
+
+## Installing the MySQL Connector for Python
+You need to first install the mysql connector for Python before trying to use it.
+You can do this by running one of the following commands.
+**Python 2**
+````
+sudo pip install mysql-connector-python
+````
+
+**Python 3**
+````
+sudo pip3 install mysql-connector-python
+````
+
+## Example
+Example code are present in the [example]() folder.
