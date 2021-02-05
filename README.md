@@ -72,13 +72,16 @@ Note: Like most Linux password inputs, the text will not show up as you type.
 **6.** You can now enter MYSQL commands to create, alter, and delete databases. 
 Through this interface, you can also create or delete users and assign them the rights to manage any database.
 &nbsp;
+&nbsp;
 
 **7.** There are two different ways you can quit out of the MYSQL command line, the first of those is to type `quit;` into the MySQL interface.
 The other way of quitting out of the MYSQL command line is to press `CTRL + D`.
 &nbsp;
+&nbsp;
 
 **8.** At this point, you will now have successfully setup MySQL on your Raspberry Pi. 
 Our next few sections will go into making better use of this database.
+&nbsp;
 &nbsp;
 
 ## Creating a MySQL Database and User
@@ -133,4 +136,5 @@ sudo apt install php-mysql
 
 As I mentioned earlier, there are many projects where a database will come in handy. Most modern websites will require a database to be able to function correctly.
 At this point of the tutorial you should now have a MySQL server up and running on your Raspberry Pi. 
-If you have ran into any issues feel free to drop a comment in the comments section below.\
+If you have ran into any issues feel free to drop a comment in the comments section below.
+&nbsp;
