@@ -37,14 +37,14 @@ We can do this by running the following two commands.
 sudo apt update
 sudo apt upgrade
 ````
-\
+&nbsp;
 
 **2.** The next step is to install the MySQL server software to your Raspberry Pi.
 Installing MySQL to the Raspberry Pi is a simple process and can be done with the following command.
 ````
 sudo apt install mariadb-server
 ````
-\
+&nbsp;
 
 **3.** With the MySQL server software installed to the Raspberry Pi, we will now need to secure it by setting a password for the **root** user.
 By default, MySQL is installed without any password set up meaning you can access the MySQL server without any authentication.
@@ -56,25 +56,30 @@ Just follow the prompts to set a password for the root user and to secure your M
 For a more secure installation, you should answer **Y** to all prompts when asked to answer **Y** or **N**.
 
 These prompts will remove features that allows someone to gain access to the server easier.
-Make sure you write down the password you set during this process as we will need to use it to access the MySQL server and create databases and users for software such as WordPress or PHPMyAdmin.\
+Make sure you write down the password you set during this process as we will need to use it to access the MySQL server and create databases and users for software such as WordPress or PHPMyAdmin.
+&nbsp;
 
 **4.** Now if you want to access your Raspberry Pi’s MySQL server and start making changes to your databases, you can enter the following command.
 ````
 sudo mysql -u root -p
 ````
-\
+&nbsp;
 
 **5.** You will be prompted to enter the password that we just created in step 3 for MySQL’s root user.
-Note: Like most Linux password inputs, the text will not show up as you type.\
+Note: Like most Linux password inputs, the text will not show up as you type.
+&nbsp;
 
 **6.** You can now enter MYSQL commands to create, alter, and delete databases. 
-Through this interface, you can also create or delete users and assign them the rights to manage any database.\
+Through this interface, you can also create or delete users and assign them the rights to manage any database.
+&nbsp;
 
 **7.** There are two different ways you can quit out of the MYSQL command line, the first of those is to type `quit;` into the MySQL interface.
-The other way of quitting out of the MYSQL command line is to press `CTRL + D`.\
+The other way of quitting out of the MYSQL command line is to press `CTRL + D`.
+&nbsp;
 
 **8.** At this point, you will now have successfully setup MySQL on your Raspberry Pi. 
-Our next few sections will go into making better use of this database.\
+Our next few sections will go into making better use of this database.
+&nbsp;
 
 ## Creating a MySQL Database and User
 **1.** Before we proceed to create a MySQL user and database on our Raspberry Pi, we must first log back into the MySQL command-line tool.
@@ -83,7 +88,7 @@ You will be prompted to enter the password for the “root” account that you s
 ````
 sudo mysql -u root -p
 ````
-\
+&nbsp;
 
 **2.** Let’s start by creating a MySQL database using the following command.
 This command is super simple and is just “CREATE DATABASE” followed by the name that you want to give the database.
@@ -91,7 +96,7 @@ In our example, we will be calling this database `exampledb`.
 ````
 CREATE DATABASE exampledb;
 ````
-\
+&nbsp;
 
 **3.** Next, we will create a MySQL user that we will assign to our new database.
 We can create this user by running the following command.
@@ -100,14 +105,14 @@ When creating your own, make sure you replace both of these.
 ````
 CREATE USER 'exampleuser'@'localhost' IDENTIFIED BY 'exampleuser';
 ```` 
-\
+&nbsp;
 
 **4.** With the user created, we can now go ahead and grant all privileges to the user so that it can interact with the database.
 This command will grant all permissions to our `exampleuser` for all tables within our `exampledb` database.
 ````
 GRANT ALL PRIVILEGES ON exampledb.* TO 'exampleuser'@'localhost';
 ````
-\
+&nbsp;
 
 **5.** The final thing we need to do for both our MySQL database and user to be finalized is to flush the privilege table.
 Without flushing the privilege table, the new user won’t be able to access the database.
@@ -115,7 +120,8 @@ We can do this by running the following command.
 ````
 FLUSH PRIVILEGES;
 ````
-If you rather not use the command line to administrate your databases then you can always install PHPMyAdmin instead.\
+If you rather not use the command line to administrate your databases then you can always install PHPMyAdmin instead.
+&nbsp;
 
 ## Installing the PHP MySQL Connector
 **1.** If you intend on using a MySQL database from PHP, you will need to make sure that you have the module installed.
@@ -123,7 +129,7 @@ You can install the MySQL connector for PHP to your Raspberry Pi by running the 
 ````
 sudo apt install php-mysql
 ````
-\
+&nbsp;
 
 As I mentioned earlier, there are many projects where a database will come in handy. Most modern websites will require a database to be able to function correctly.
 At this point of the tutorial you should now have a MySQL server up and running on your Raspberry Pi. 
