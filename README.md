@@ -11,7 +11,8 @@ It is one of the pieces of technology that helps drive the modern web.
 A database such as MYSQL is often a key component of dynamic websites and is one of the best ways of storing data for web applications.
 
 If you’re unfamiliar with MySQL, it is a relational database management system and allows you to store and maintain large amounts of data easily.
-Setup something like PHPMyAdmin if you want a graphical user interface rather than the command line. It does make managing a database slightly easier.&nbsp;
+Setup something like PHPMyAdmin if you want a graphical user interface rather than the command line. It does make managing a database slightly easier.
+&nbsp;
 
 ## Equipment List
 Below are the pieces of equipment that I made use of for this Raspberry Pi MySQL tutorial.
@@ -23,7 +24,8 @@ Recommended:
 * Ethernet Cord or WiFi dongle (The Pi 3 has WiFi inbuilt)
 
 Optional:
-* Raspberry Pi Case&nbsp;
+* Raspberry Pi Case
+&nbsp;
 
 ## Setting up MYSQL on a Raspberry Pi
 As with this code, we will be utilizing the Raspbian operating system.
